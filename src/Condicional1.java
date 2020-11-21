@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +18,7 @@ public class Condicional1 extends javax.swing.JFrame {
      */
     public Condicional1() {
         initComponents();
+        this.setIconImage(new ImageIcon(getClass().getResource("img/icone.png")).getImage());
     }
 
     /**

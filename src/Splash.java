@@ -32,9 +32,9 @@ public class Splash extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(null, "Erro ao carregar");
                     }
                 }
-                Menu Mn = new Menu();
-            Mn.setVisible(true);
-            dispose();
+               Menu Mn = new Menu();
+               Mn.setVisible(true);
+               dispose();
             }
             
         }.start();

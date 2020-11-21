@@ -38,6 +38,7 @@ public class Operadores1 extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

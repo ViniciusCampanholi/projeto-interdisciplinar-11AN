@@ -65,7 +65,7 @@ public class Splash extends javax.swing.JFrame {
         getContentPane().add(jProgressBar1);
         jProgressBar1.setBounds(150, 540, 500, 30);
 
-        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Grupo 190.png"))); // NOI18N
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaSplash.png"))); // NOI18N
         Background.setText("jLabel1");
         Background.setMaximumSize(new java.awt.Dimension(800, 600));
         Background.setMinimumSize(new java.awt.Dimension(800, 600));

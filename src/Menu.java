@@ -25,7 +25,6 @@ public class Menu extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(800, 630));
         setMinimumSize(new java.awt.Dimension(800, 630));
-        setPreferredSize(new java.awt.Dimension(0, 0));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -97,7 +96,7 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(490, 420, 100, 40);
 
-        background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Grupo 193.png"))); // NOI18N
+        background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto.png"))); // NOI18N
         background2.setText("jLabel2");
         background2.setMaximumSize(new java.awt.Dimension(800, 600));
         background2.setMinimumSize(new java.awt.Dimension(800, 600));
@@ -159,10 +158,8 @@ public class Menu extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Menu().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Menu().setVisible(true);
         });
     }
 

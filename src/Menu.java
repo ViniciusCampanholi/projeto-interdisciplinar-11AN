@@ -35,7 +35,8 @@ public class Menu extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        background2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(800, 630));
@@ -81,7 +82,7 @@ public class Menu extends javax.swing.JFrame {
         jButton3.setBounds(100, 300, 220, 80);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setText("Estrutura de repeticção");
+        jButton4.setText("Estrutura de repetição");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -104,9 +105,16 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(500, 410, 90, 40);
 
-        background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto.png"))); // NOI18N
-        getContentPane().add(background2);
-        background2.setBounds(0, 0, 800, 600);
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setText("Menu");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(310, 130, 90, 30);
+        jLabel1.getAccessibleContext().setAccessibleDescription("");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 800, 600);
 
         pack();
         setLocationRelativeTo(null);
@@ -114,8 +122,8 @@ public class Menu extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        Condicional1 cond = new Condicional1();
-        cond.setVisible(true);
+        Condicional1 cond1 = new Condicional1();
+        cond1.setVisible(true);
         dispose();
         
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -183,11 +191,12 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel background2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

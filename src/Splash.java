@@ -54,13 +54,14 @@ public class Splash extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        mensagemStatus.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        mensagemStatus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         mensagemStatus.setForeground(new java.awt.Color(255, 255, 255));
         mensagemStatus.setText("Status");
         getContentPane().add(mensagemStatus);
         mensagemStatus.setBounds(150, 570, 500, 20);
 
-        jProgressBar1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jProgressBar1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jProgressBar1.setFocusCycleRoot(true);
         jProgressBar1.setStringPainted(true);
         getContentPane().add(jProgressBar1);
         jProgressBar1.setBounds(150, 540, 500, 30);

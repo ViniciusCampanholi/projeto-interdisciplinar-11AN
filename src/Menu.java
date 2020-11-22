@@ -45,8 +45,9 @@ public class Menu extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Variáveis");
+        jButton1.setToolTipText("Clique para ir ao game 1: Variaveias, constantes e tipos");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -57,8 +58,9 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(100, 200, 220, 80);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton2.setText("Operadores");
+        jButton2.setToolTipText("Clique para ir ao game 2: Operadores matemáticos e de atribuição");
         jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -69,8 +71,9 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(370, 200, 220, 80);
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton3.setText("Estrutura condicional");
+        jButton3.setToolTipText("Clique para ir a game 3: Estruturas condicionais");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -81,8 +84,9 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(100, 300, 220, 80);
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton4.setText("Estrutura de repetição");
+        jButton4.setToolTipText("Clique para ir ao game 4: Estruturas de repetição");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +97,7 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton4);
         jButton4.setBounds(370, 300, 220, 80);
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton5.setText("Sair");
         jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -105,13 +109,13 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(500, 410, 90, 40);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Menu");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(310, 130, 90, 30);
         jLabel1.getAccessibleContext().setAccessibleDescription("");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 800, 600);

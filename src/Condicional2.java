@@ -33,6 +33,7 @@ public class Condicional2 extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
@@ -42,8 +43,10 @@ public class Condicional2 extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnAnterior.png"))); // NOI18N
+        jButton1.setToolTipText("Clique para ir voltar a tela anterior");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,12 +55,16 @@ public class Condicional2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(520, 400, 50, 50);
+        jButton1.setBounds(520, 400, 60, 70);
+        jButton1.getAccessibleContext().setAccessibleName("Tela anterior");
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
+        jButton2.setToolTipText("Clique para ir para a próxima tela");
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setFocusCycleRoot(true);
         jButton2.setOpaque(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,13 +72,29 @@ public class Condicional2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(580, 400, 50, 50);
+        jButton2.setBounds(580, 390, 50, 90);
+        jButton2.getAccessibleContext().setAccessibleName("Próxima tela");
+
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jButton3.setText("Menu");
+        jButton3.setToolTipText("Clique para retornar ao Menu inicial");
+        jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setBorderPainted(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setFocusCycleRoot(true);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(720, 560, 70, 30);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicionaltexto2.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(50, 110, 580, 340);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto.png"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
         background.setText("background");
         getContentPane().add(background);
         background.setBounds(0, 0, 800, 600);
@@ -98,6 +121,13 @@ public class Condicional2 extends javax.swing.JFrame {
         cond3.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        Menu Mn = new Menu();
+        Mn.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,6 +169,7 @@ public class Condicional2 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

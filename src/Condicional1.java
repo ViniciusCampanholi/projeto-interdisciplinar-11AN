@@ -33,6 +33,7 @@ public class Condicional1 extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,12 +45,15 @@ public class Condicional1 extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicionaltexto1.png"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 110, 570, 280);
+        jLabel1.setBounds(50, 110, 590, 280);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
+        jButton1.setToolTipText("Clique para ir para a próxima tela");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setFocusCycleRoot(true);
         jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,9 +61,25 @@ public class Condicional1 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(580, 400, 50, 50);
+        jButton1.setBounds(580, 400, 50, 70);
+        jButton1.getAccessibleContext().setAccessibleName("Próxima tela");
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto.png"))); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jButton2.setText("Menu");
+        jButton2.setToolTipText("Clique para retornar ao Menu inicial");
+        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.setBorderPainted(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setFocusCycleRoot(true);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(720, 560, 70, 30);
+
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
         background.setText("background");
         getContentPane().add(background);
         background.setBounds(0, 0, 800, 600);
@@ -79,6 +99,13 @@ public class Condicional1 extends javax.swing.JFrame {
         dispose();
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Menu Mn = new Menu();
+        Mn.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,6 +146,7 @@ public class Condicional1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

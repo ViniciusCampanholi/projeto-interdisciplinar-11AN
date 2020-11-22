@@ -61,10 +61,13 @@ public class Splash extends javax.swing.JFrame {
         mensagemStatus.setBounds(150, 570, 500, 20);
 
         jProgressBar1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jProgressBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jProgressBar1.setFocusCycleRoot(true);
         jProgressBar1.setStringPainted(true);
         getContentPane().add(jProgressBar1);
         jProgressBar1.setBounds(150, 540, 500, 30);
+        jProgressBar1.getAccessibleContext().setAccessibleName("");
+        jProgressBar1.getAccessibleContext().setAccessibleDescription("Barra de carregamento");
 
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaSplash.png"))); // NOI18N
         Background.setText("jLabel1");

@@ -1,6 +1,7 @@
 
 import java.util.HashSet;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -31,46 +32,27 @@ public class Condicional4 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 630));
         setResizable(false);
         getContentPane().setLayout(null);
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnAnterior.png"))); // NOI18N
-        jButton1.setToolTipText("Clique para ir voltar a tela anterior");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(650, 350, 60, 70);
-        jButton1.getAccessibleContext().setAccessibleName("Tela anterior");
-
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
-        jButton2.setToolTipText("Clique para ir para a próxima tela");
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusCycleRoot(true);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(710, 350, 50, 70);
-        jButton2.getAccessibleContext().setAccessibleName("Próxima tela");
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jButton3.setText("Menu");
@@ -87,6 +69,100 @@ public class Condicional4 extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(720, 560, 70, 30);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setText("Vamos ver se você entendeu?");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(230, 30, 340, 40);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicionaltexto4.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(90, 70, 650, 60);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel3.setText("var");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(50, 160, 30, 40);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel4.setText("\"Indo ao mercado\"");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(130, 130, 140, 40);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel5.setText("algoritmo");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(50, 130, 70, 40);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel6.setText("clima: caractere");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(70, 190, 140, 40);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel7.setText("inicio");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(50, 220, 200, 40);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel8.setText("clima <- \"chuva\"");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(70, 250, 140, 40);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel9.setText("escreva (\"O bot levou o guarda chuva!\")");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(70, 340, 310, 40);
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel10.setText("fimalgoritmo");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(50, 370, 310, 40);
+
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icone_executar.png"))); // NOI18N
+        jButton2.setText("EXECUTAR");
+        jButton2.setToolTipText("Clique para executar o código");
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setFocusCycleRoot(true);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(40, 430, 110, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(70, 300, 70, 30);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2);
+        jTextField2.setBounds(150, 300, 100, 30);
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3);
+        jTextField3.setBounds(260, 300, 80, 30);
+
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
         background.setText("background");
         getContentPane().add(background);
@@ -96,29 +172,44 @@ public class Condicional4 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        jButton1.setOpaque(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setBorderPainted(false);
-        Condicional3 cond3 = new Condicional3();
-        cond3.setVisible(true);
-        dispose();
-        
-       
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         Menu Mn = new Menu();
         Mn.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        String comando1;
+        String condicao;
+        String comando2;
+        
+        comando1 = jTextField1.getText();
+        condicao = jTextField2.getText();
+        comando2 = jTextField3.getText();
+        
+        if(comando1.equals("se")||comando1.equals("SE") && comando2.equals("entao")||comando2.equals("ENTAO") && condicao.equals("(clima=\"chuva\")")||condicao.equals("(CLIMA=\"CHUVA\")")){
+            JOptionPane.showMessageDialog(null, "Parabens");
+            Condicional5 cond5 = new Condicional5();
+            cond5.setVisible(true);
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "Poxa, você não passou a informação de forma correta!");
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,8 +249,20 @@ public class Condicional4 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

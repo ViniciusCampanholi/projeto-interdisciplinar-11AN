@@ -34,7 +34,6 @@ public class Condicional4 extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -44,6 +43,8 @@ public class Condicional4 extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
@@ -74,54 +75,49 @@ public class Condicional4 extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(230, 30, 340, 40);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicionaltexto4.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(90, 70, 650, 60);
-
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel3.setForeground(java.awt.SystemColor.textHighlight);
         jLabel3.setText("var");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(50, 160, 30, 40);
+        jLabel3.setBounds(50, 180, 30, 40);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel4.setText("\"Indo ao mercado\"");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(130, 130, 140, 40);
+        jLabel4.setBounds(130, 150, 140, 40);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel5.setForeground(java.awt.SystemColor.textHighlight);
         jLabel5.setText("algoritmo");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(50, 130, 70, 40);
+        jLabel5.setBounds(50, 150, 70, 40);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel6.setText("clima: caractere");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(70, 190, 140, 40);
+        jLabel6.setBounds(70, 210, 140, 40);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel7.setForeground(java.awt.SystemColor.textHighlight);
         jLabel7.setText("inicio");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(50, 220, 200, 40);
+        jLabel7.setBounds(50, 240, 200, 40);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel8.setText("clima <- \"chuva\"");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(70, 250, 140, 40);
+        jLabel8.setBounds(70, 280, 140, 40);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel9.setText("escreva (\"O bot levou o guarda chuva!\")");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(70, 340, 310, 40);
+        jLabel9.setBounds(70, 360, 310, 40);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel10.setForeground(java.awt.SystemColor.textHighlight);
         jLabel10.setText("fimalgoritmo");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(50, 370, 310, 40);
+        jLabel10.setBounds(50, 400, 310, 40);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icone_executar.png"))); // NOI18N
@@ -137,7 +133,23 @@ public class Condicional4 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(40, 430, 110, 40);
+        jButton2.setBounds(50, 460, 110, 40);
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("O Bot irá ao mercado, complete o algortimo abaixo e diga a ele o que fazer se estiver chovendo.\nUtilize os campos de texto em branco para inserir as informções ausentes, após inserir as informações clique no botão executar.");
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setBorder(null);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(40, 70, 720, 70);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +157,7 @@ public class Condicional4 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(70, 300, 70, 30);
+        jTextField1.setBounds(70, 330, 70, 30);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +165,7 @@ public class Condicional4 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(150, 300, 100, 30);
+        jTextField2.setBounds(150, 330, 100, 30);
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,7 +173,7 @@ public class Condicional4 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(260, 300, 80, 30);
+        jTextField3.setBounds(260, 330, 80, 30);
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
         background.setText("background");
@@ -201,13 +213,13 @@ public class Condicional4 extends javax.swing.JFrame {
         condicao = jTextField2.getText();
         comando2 = jTextField3.getText();
         
-        if(comando1.equals("se")||comando1.equals("SE") && comando2.equals("entao")||comando2.equals("ENTAO") && condicao.equals("(clima=\"chuva\")")||condicao.equals("(CLIMA=\"CHUVA\")")){
+        if(comando1.equals("se") && comando2.equals("entao") && condicao.equals("(clima=\"chuva\")")){
             JOptionPane.showMessageDialog(null, "Parabens");
             Condicional5 cond5 = new Condicional5();
             cond5.setVisible(true);
             dispose();
-        } else {
-            JOptionPane.showMessageDialog(null, "Poxa, você não passou a informação de forma correta!");
+        } else if (!comando1.equals("se")||!comando2.equals("entao")||!condicao.equals("(clima=\"chuva\")")){
+            JOptionPane.showMessageDialog(null, "Hum... Tem alguma coisa errada.");
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -253,7 +265,6 @@ public class Condicional4 extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -261,6 +272,8 @@ public class Condicional4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

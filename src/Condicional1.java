@@ -31,9 +31,9 @@ public class Condicional1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,10 +42,6 @@ public class Condicional1 extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(800, 630));
         setResizable(false);
         getContentPane().setLayout(null);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicionaltexto1.png"))); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(50, 110, 590, 280);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
         jButton1.setToolTipText("Clique para ir para a próxima tela");
@@ -77,6 +73,10 @@ public class Condicional1 extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2);
         jButton2.setBounds(720, 560, 70, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/condicionaltexto1.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(50, 120, 590, 280);
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
         background.setText("background");

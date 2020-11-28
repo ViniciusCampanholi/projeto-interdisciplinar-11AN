@@ -106,7 +106,7 @@ public class Condicional6 extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(40, 70, 720, 90);
+        jScrollPane1.setBounds(50, 70, 690, 90);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel5.setForeground(java.awt.SystemColor.textHighlight);

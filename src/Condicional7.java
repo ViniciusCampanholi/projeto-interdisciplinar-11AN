@@ -32,25 +32,19 @@ public class Condicional7 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        background = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        background = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
+        background.setText("background");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 630));
@@ -100,97 +94,53 @@ public class Condicional7 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Agora que você entendeu um pouco sobre estrutura condicional simples, vamos abrir a \"mente\" e entender a estrutura condicional composta!\nSe uma condição for verdadeira faça \"algo\", se não for verdadeira faço \"outro algo\". Isso é uma estrutura composta . Vamos usar o exemplo anterior:\n");
+        jTextArea1.setText("Muito bem, vamos treinar!\n\n1) escolha o comando que inicia uma estrutura condicional:");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setBorder(null);
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(40, 70, 720, 90);
+        jScrollPane1.setBounds(40, 80, 720, 80);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel5.setText("algoritmo");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(50, 160, 70, 40);
+        jCheckBox1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jCheckBox1.setText("Se");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jCheckBox1);
+        jCheckBox1.setBounds(40, 180, 50, 31);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel3.setText("var");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(50, 200, 30, 40);
+        jCheckBox2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jCheckBox2.setText("Leia");
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jCheckBox2);
+        jCheckBox2.setBounds(160, 180, 70, 31);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel4.setText("\"Indo ao mercado\"");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(130, 160, 140, 40);
+        jCheckBox3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jCheckBox3.setText("Faça");
+        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jCheckBox3);
+        jCheckBox3.setBounds(290, 180, 70, 31);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel6.setText("clima: caractere");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(80, 210, 140, 20);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel7.setText("inicio");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(50, 230, 200, 40);
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel8.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel8.setText("Leia (clima)");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(50, 270, 200, 40);
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel9.setText("escreva (\"O bot levou o guarda chuva!\")");
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(80, 350, 310, 40);
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel10.setText("fimalgoritmo");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(50, 460, 310, 40);
-
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel11.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel11.setText(" Se (clima=\"chuva\")");
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(40, 310, 200, 40);
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel12.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel12.setText("Senao");
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(50, 380, 200, 40);
-
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel13.setText("escreva (\"O bot saiu sem o guarda chuva e se molhou!\")");
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(80, 420, 400, 40);
-
-        jScrollPane2.setBorder(null);
-        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea2.setColumns(20);
-        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jTextArea2.setForeground(java.awt.SystemColor.activeCaptionBorder);
-        jTextArea2.setLineWrap(true);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("\t\t//nome do algoritmo\n\n\t        //declaração de variavel e tipo\n\n\n\t//instrução para ler o valor digitado pelo usuario e armazenar na variavel\n\n\t     //SE onde se clima receber o dado \"chuva\" o comando abaixo sera executado\n\n\n             //se clima NAO recebr o dado \"chuva\" então o comando abaixo será executado\n");
-        jTextArea2.setWrapStyleWord(true);
-        jTextArea2.setBorder(null);
-        jScrollPane2.setViewportView(jTextArea2);
-
-        getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(50, 170, 710, 330);
-
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
-        background.setText("background");
-        getContentPane().add(background);
-        background.setBounds(0, 0, 800, 600);
+        jCheckBox4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jCheckBox4.setText("Entao");
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jCheckBox4);
+        jCheckBox4.setBounds(450, 180, 70, 31);
 
         pack();
         setLocationRelativeTo(null);
@@ -205,10 +155,26 @@ public class Condicional7 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Condicional4 cond4 = new Condicional4();
-        cond4.setVisible(true);
+        Condicional8 cond8 = new Condicional8();
+        cond8.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
+    private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox3ActionPerformed
+
+    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,21 +216,12 @@ public class Condicional7 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }

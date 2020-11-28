@@ -33,7 +33,8 @@ public class Condicional5 extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         background = new javax.swing.JLabel();
@@ -62,9 +63,27 @@ public class Condicional5 extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(200, 250, 300, 360);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Parabéns!Você entendeu o como vai ensinar o Bot a tomar decisões, e de quebra ele pode se proteger da chuva.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(140, 0, 560, 81);
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Você entendeu como o pode ensinar o Bot a tomar descisões simples, e de \tquebra ele ainda se protegeu da chuva!");
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setBorder(null);
+        jTextArea1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        jTextArea1.setEnabled(false);
+        jTextArea1.setFocusable(false);
+        jTextArea1.setOpaque(false);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(0, 0, 800, 60);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/guardaChuva.png"))); // NOI18N
         getContentPane().add(jLabel3);
@@ -149,7 +168,8 @@ public class Condicional5 extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

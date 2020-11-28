@@ -13,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author vinic
  */
-public class Condicional6 extends javax.swing.JFrame {
+public class Condicional7 extends javax.swing.JFrame {
 
     /**
      * Creates new form condicional
      */
-    public Condicional6() {
+    public Condicional7() {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("img/icone.png")).getImage());
     }
@@ -205,8 +205,8 @@ public class Condicional6 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Condicional7 cond7 = new Condicional7();
-        cond7.setVisible(true);
+        Condicional4 cond4 = new Condicional4();
+        cond4.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

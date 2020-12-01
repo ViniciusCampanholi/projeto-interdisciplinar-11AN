@@ -1,6 +1,7 @@
 
 import java.util.HashSet;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -33,10 +34,22 @@ public class Condicional5 extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,35 +72,10 @@ public class Condicional5 extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(720, 560, 70, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/robot-with-arm-up_icon-icons.com_55271.png"))); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setText("Estrutura condicional composta");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(200, 250, 300, 360);
-
-        jScrollPane1.setBorder(null);
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Você entendeu como o pode ensinar o Bot a tomar descisões simples, e de \tquebra ele ainda se protegeu da chuva!");
-        jTextArea1.setWrapStyleWord(true);
-        jTextArea1.setBorder(null);
-        jTextArea1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        jTextArea1.setEnabled(false);
-        jTextArea1.setFocusable(false);
-        jTextArea1.setOpaque(false);
-        jScrollPane1.setViewportView(jTextArea1);
-
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(0, 0, 800, 60);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/guardaChuva.png"))); // NOI18N
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(320, 80, 292, 280);
+        jLabel1.setBounds(190, 30, 370, 40);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
         jButton2.setToolTipText("Clique para ir para a próxima tela");
@@ -102,9 +90,106 @@ public class Condicional5 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(740, 430, 50, 70);
+        jButton2.setBounds(710, 460, 50, 70);
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaGenérica.png"))); // NOI18N
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Agora que você entendeu um pouco sobre estrutura condicional simples, vamos abrir a \"mente\" e entender a estrutura condicional composta!\nSe uma condição for verdadeira faça \"algo\", se não for verdadeira faço \"outro algo\". Isso é uma estrutura composta . Vamos usar o exemplo anterior:\n");
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setBorder(null);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(50, 70, 690, 100);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel5.setText("algoritmo");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(50, 160, 70, 40);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel3.setText("var");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(50, 200, 30, 40);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel4.setText("\"Indo ao mercado\"");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(130, 160, 140, 40);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel6.setText("clima: caractere");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(80, 210, 140, 20);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel7.setText("inicio");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(50, 230, 200, 40);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel8.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel8.setText("Leia (clima)");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(50, 270, 200, 40);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel9.setText("escreva (\"O bot levou o guarda chuva!\")");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(80, 350, 310, 40);
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel10.setText("fimalgoritmo");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(50, 460, 310, 40);
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel11.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel11.setText(" Se (clima=\"chuva\")");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(40, 310, 200, 40);
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel12.setForeground(java.awt.SystemColor.textHighlight);
+        jLabel12.setText("Senao");
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(50, 380, 200, 40);
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel13.setText("escreva (\"O bot saiu sem o guarda chuva e se molhou!\")");
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(80, 420, 400, 40);
+
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jTextArea2.setForeground(java.awt.SystemColor.activeCaptionBorder);
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("\t\t//nome do algoritmo\n\n\t        //declaração de variavel e tipo\n\n\n\t//instrução para ler o valor digitado pelo usuario e armazenar na variavel\n\n\t     //SE onde se clima receber o dado \"chuva\" o comando abaixo sera executado\n\n\n             //se clima NAO recebr o dado \"chuva\" então o comando abaixo será executado\n");
+        jTextArea2.setWrapStyleWord(true);
+        jTextArea2.setBorder(null);
+        jScrollPane2.setViewportView(jTextArea2);
+
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(50, 170, 710, 330);
+
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
         background.setText("background");
         getContentPane().add(background);
         background.setBounds(0, 0, 800, 600);
@@ -122,8 +207,8 @@ public class Condicional5 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Condicional6 cond6 = new Condicional6();
-        cond6.setVisible(true);
+        Condicional6 cond7 = new Condicional6();
+        cond7.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -168,8 +253,20 @@ public class Condicional5 extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }

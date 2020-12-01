@@ -1,5 +1,6 @@
 
 import java.util.HashSet;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -35,21 +36,22 @@ public class Condicional6 extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        statusQuestao1 = new javax.swing.JLabel();
+        statusQuestao2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        correto1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jSeparator1 = new javax.swing.JSeparator();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jButton4 = new javax.swing.JButton();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        correto2 = new javax.swing.JRadioButton();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        jRadioButton7 = new javax.swing.JRadioButton();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -92,105 +94,158 @@ public class Condicional6 extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(710, 460, 50, 70);
 
+        statusQuestao1.setToolTipText("");
+        getContentPane().add(statusQuestao1);
+        statusQuestao1.setBounds(720, 110, 30, 30);
+
+        statusQuestao2.setToolTipText("");
+        getContentPane().add(statusQuestao2);
+        statusQuestao2.setBounds(320, 240, 30, 30);
+
         jScrollPane1.setBorder(null);
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Agora que você entendeu um pouco sobre estrutura condicional simples, vamos abrir a \"mente\" e entender a estrutura condicional composta!\nSe uma condição for verdadeira faça \"algo\", se não for verdadeira faço \"outro algo\". Isso é uma estrutura composta . Vamos usar o exemplo anterior:\n");
+        jTextArea1.setText("Muito bem, vamos treinar! Apos responder, clica no botão enviar.\n\n1) Escolha o comando que inicia uma estrutura condicional, sendo que apenas uma está correta:");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setBorder(null);
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(50, 70, 690, 90);
+        jScrollPane1.setBounds(40, 70, 720, 90);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel5.setText("algoritmo");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(50, 160, 70, 40);
+        correto1.setBackground(new java.awt.Color(255, 255, 255));
+        correto1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        correto1.setText("Se");
+        correto1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correto1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(correto1);
+        correto1.setBounds(40, 180, 93, 23);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel3.setText("var");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(50, 200, 30, 40);
+        jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jRadioButton2.setText("Leia");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton2);
+        jRadioButton2.setBounds(150, 180, 93, 23);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel4.setText("\"Indo ao mercado\"");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(130, 160, 140, 40);
+        jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jRadioButton3.setText("Faça");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton3);
+        jRadioButton3.setBounds(390, 180, 93, 23);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel6.setText("clima: caractere");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(80, 210, 140, 20);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel7.setText("inicio");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(50, 230, 200, 40);
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel8.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel8.setText("Leia (clima)");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(50, 270, 200, 40);
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel9.setText("escreva (\"O bot levou o guarda chuva!\")");
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(80, 350, 310, 40);
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel10.setText("fimalgoritmo");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(50, 460, 310, 40);
-
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel11.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel11.setText(" Se (clima=\"chuva\")");
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(40, 310, 200, 40);
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel12.setForeground(java.awt.SystemColor.textHighlight);
-        jLabel12.setText("Senao");
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(50, 380, 200, 40);
-
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel13.setText("escreva (\"O bot saiu sem o guarda chuva e se molhou!\")");
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(80, 420, 400, 40);
+        jRadioButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jRadioButton4.setText("Então");
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton4);
+        jRadioButton4.setBounds(270, 180, 93, 23);
+        getContentPane().add(jSeparator1);
+        jSeparator1.setBounds(40, 210, 720, 20);
 
         jScrollPane2.setBorder(null);
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
+        jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
-        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jTextArea2.setForeground(java.awt.SystemColor.activeCaptionBorder);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jTextArea2.setLineWrap(true);
         jTextArea2.setRows(5);
-        jTextArea2.setText("\t\t//nome do algoritmo\n\n\t        //declaração de variavel e tipo\n\n\n\t//instrução para ler o valor digitado pelo usuario e armazenar na variavel\n\n\t     //SE onde se clima receber o dado \"chuva\" o comando abaixo sera executado\n\n\n             //se clima NAO recebr o dado \"chuva\" então o comando abaixo será executado\n");
+        jTextArea2.setText("\n2) Um laço de repetição serve para:");
         jTextArea2.setWrapStyleWord(true);
         jTextArea2.setBorder(null);
         jScrollPane2.setViewportView(jTextArea2);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(50, 170, 710, 330);
+        jScrollPane2.setBounds(40, 220, 720, 70);
+
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icone_executar.png"))); // NOI18N
+        jButton4.setText("Enviar");
+        jButton4.setToolTipText("Clique para executar o código");
+        jButton4.setBorder(null);
+        jButton4.setBorderPainted(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setFocusCycleRoot(true);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4);
+        jButton4.setBounds(50, 460, 140, 40);
+
+        jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jRadioButton1.setText("Repetir ações enquanto um valor não for verdadeiro");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton1);
+        jRadioButton1.setBounds(40, 290, 720, 30);
+
+        correto2.setBackground(new java.awt.Color(255, 255, 255));
+        correto2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        correto2.setText("Executar uma ação quandoa condição for atendida");
+        correto2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correto2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(correto2);
+        correto2.setBounds(40, 330, 720, 30);
+
+        jRadioButton6.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jRadioButton6.setText("Somar duas variáveis com valores numericos");
+        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton6);
+        jRadioButton6.setBounds(40, 370, 720, 31);
+
+        jRadioButton7.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jRadioButton7.setText("Definir o tipo de uma variável");
+        jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton7);
+        jRadioButton7.setBounds(40, 410, 720, 31);
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
         background.setText("background");
         getContentPane().add(background);
-        background.setBounds(0, 0, 800, 600);
+        background.setBounds(0, 0, 860, 600);
 
         pack();
         setLocationRelativeTo(null);
@@ -205,10 +260,96 @@ public class Condicional6 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Condicional7 cond7 = new Condicional7();
-        cond7.setVisible(true);
+        Condicional8 cond8 = new Condicional8();
+        cond8.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void correto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correto1ActionPerformed
+        // TODO add your handling code here:
+        if(correto1.isSelected()){
+            jRadioButton2.setSelected(false);
+            jRadioButton3.setSelected(false);
+            jRadioButton4.setSelected(false);
+        }
+    }//GEN-LAST:event_correto1ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+        if(jRadioButton2.isSelected()){
+            correto1.setSelected(false);
+            jRadioButton3.setSelected(false);
+            jRadioButton4.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+        // TODO add your handling code here:
+         if(jRadioButton3.isSelected()){
+            correto1.setSelected(false);
+            jRadioButton2.setSelected(false);
+            jRadioButton4.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
+
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        // TODO add your handling code here:
+         if(jRadioButton4.isSelected()){
+            correto1.setSelected(false);
+            jRadioButton2.setSelected(false);
+            jRadioButton3.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        if(correto1.isSelected()){
+            statusQuestao1.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_acerto.png")));
+        }else {
+            statusQuestao1.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_erro.png")));
+        }
+         if(correto2.isSelected()){
+            statusQuestao2.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_acerto.png")));
+        }else {
+            statusQuestao2.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_erro.png")));
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+        // TODO add your handling code here:
+        if(jRadioButton6.isSelected()){
+            correto2.setSelected(false);
+            jRadioButton1.setSelected(false);
+            jRadioButton7.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButton6ActionPerformed
+
+    private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
+        // TODO add your handling code here:
+        if(jRadioButton7.isSelected()){
+            correto2.setSelected(false);
+            jRadioButton6.setSelected(false);
+            jRadioButton1.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButton7ActionPerformed
+
+    private void correto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correto2ActionPerformed
+        // TODO add your handling code here:
+        if(correto2.isSelected()){
+            jRadioButton1.setSelected(false);
+            jRadioButton6.setSelected(false);
+            jRadioButton7.setSelected(false);
+        }
+    }//GEN-LAST:event_correto2ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+        if(jRadioButton1.isSelected()){
+            correto2.setSelected(false);
+            jRadioButton6.setSelected(false);
+            jRadioButton7.setSelected(false);
+        }
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -248,23 +389,24 @@ public class Condicional6 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
+    private javax.swing.JRadioButton correto1;
+    private javax.swing.JRadioButton correto2;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JLabel statusQuestao1;
+    private javax.swing.JLabel statusQuestao2;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,3 +1,4 @@
+
 import javax.swing.ImageIcon;
 
 /*
@@ -10,12 +11,12 @@ import javax.swing.ImageIcon;
  *
  * @author vinic
  */
-public class Operadores1 extends javax.swing.JFrame {
+public class Operadores2 extends javax.swing.JFrame {
 
     /**
      * Creates new form operadores
      */
-    public Operadores1() {
+    public Operadores2() {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("img/icone.png")).getImage());
     }
@@ -29,8 +30,9 @@ public class Operadores1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -41,21 +43,6 @@ public class Operadores1 extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(800, 630));
         setResizable(false);
         getContentPane().setLayout(null);
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
-        jButton1.setToolTipText("Clique para ir para a próxima tela");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setFocusCycleRoot(true);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(580, 420, 50, 70);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jButton2.setText("Menu");
@@ -72,18 +59,45 @@ public class Operadores1 extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(720, 560, 70, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/operador-tx1_1.png"))); // NOI18N
-        jLabel2.setMaximumSize(new java.awt.Dimension(581, 256));
-        jLabel2.setMinimumSize(new java.awt.Dimension(581, 256));
-        jLabel2.setPreferredSize(new java.awt.Dimension(581, 256));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnAnterior.png"))); // NOI18N
+        jButton1.setToolTipText("Clique para ir para a próxima tela");
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setFocusCycleRoot(true);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(520, 420, 60, 70);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
+        jButton3.setToolTipText("Clique para ir para a próxima tela");
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setFocusCycleRoot(true);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(580, 420, 50, 70);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/operador-tx2.png"))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 120, 590, 310);
+        jLabel2.setBounds(50, 120, 380, 310);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
         jLabel1.setText("fundo");
-        jLabel1.setMaximumSize(new java.awt.Dimension(800, 630));
-        jLabel1.setMinimumSize(new java.awt.Dimension(800, 630));
-        jLabel1.setPreferredSize(new java.awt.Dimension(800, 630));
+        jLabel1.setMaximumSize(new java.awt.Dimension(832, 630));
+        jLabel1.setMinimumSize(new java.awt.Dimension(832, 630));
+        jLabel1.setPreferredSize(new java.awt.Dimension(832, 630));
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 800, 630);
 
@@ -104,11 +118,21 @@ public class Operadores1 extends javax.swing.JFrame {
         jButton1.setContentAreaFilled(false);
         jButton1.setBorderPainted(false);
 
-        Operadores2 next = new Operadores2();
+        Operadores1 before = new Operadores1();
+        before.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        jButton1.setOpaque(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setBorderPainted(false);
+
+        Operadores3 next = new Operadores3();
         next.setVisible(true);
         dispose();
-
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,6 +173,7 @@ public class Operadores1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

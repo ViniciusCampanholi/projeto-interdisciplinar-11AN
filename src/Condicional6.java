@@ -260,9 +260,9 @@ public class Condicional6 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Condicional8 cond8 = new Condicional8();
-        cond8.setVisible(true);
-        dispose();
+        //Condicional8 cond8 = new Condicional8();
+        //cond8.setVisible(true);
+        //dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void correto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correto1ActionPerformed

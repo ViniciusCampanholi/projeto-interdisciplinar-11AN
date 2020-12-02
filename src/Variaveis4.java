@@ -96,6 +96,7 @@ public class Variaveis4 extends javax.swing.JFrame {
         jLabel2.setBounds(310, 460, 330, 50);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
         jLabel3.setText("var");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(50, 170, 30, 40);
@@ -106,16 +107,18 @@ public class Variaveis4 extends javax.swing.JFrame {
         jLabel4.setBounds(130, 140, 190, 40);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
         jLabel5.setText("algoritmo");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(50, 140, 70, 40);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel6.setText(": idade");
+        jLabel6.setText("idade:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(150, 240, 50, 30);
+        jLabel6.setBounds(80, 240, 50, 30);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
         jLabel7.setText("inicio");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(50, 260, 200, 40);
@@ -126,6 +129,7 @@ public class Variaveis4 extends javax.swing.JFrame {
         jLabel9.setBounds(60, 290, 470, 30);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
         jLabel10.setText("fimalgoritmo");
         getContentPane().add(jLabel10);
         jLabel10.setBounds(50, 410, 100, 40);
@@ -141,9 +145,9 @@ public class Variaveis4 extends javax.swing.JFrame {
         jLabel12.setBounds(60, 350, 310, 30);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel13.setText(": nome");
+        jLabel13.setText("nome:");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(150, 200, 50, 30);
+        jLabel13.setBounds(80, 200, 50, 30);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel14.setText("nome <-");
@@ -189,7 +193,7 @@ public class Variaveis4 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(80, 200, 70, 30);
+        jTextField1.setBounds(130, 200, 70, 30);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,7 +209,7 @@ public class Variaveis4 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField3);
-        jTextField3.setBounds(80, 240, 70, 30);
+        jTextField3.setBounds(130, 240, 70, 30);
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -262,20 +266,24 @@ public class Variaveis4 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String tipo1;
-        String tipo2;
+        String nome;
+        String idade;
+        String tipoNome;
+        String tipoIdade;
 
         
-        tipo1 = jTextField1.getText();
-        tipo2 = jTextField3.getText();
+        tipoNome = jTextField1.getText();
+        tipoIdade = jTextField3.getText();
+        nome = jTextField2.getText();
+        idade = jTextField4.getText();
 
         
-        if(tipo1.equals("caractere") && tipo2.equals("inteiro")){
+        if(tipoNome.equals("caractere") && tipoIdade.equals("inteiro")){
             statusQuestao.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_acerto.png")));
             iconeRobo.setIcon((Icon) new ImageIcon(getClass().getResource("img/robot-with-arm-up_icon-icons.com_55271.png")));
             jLabel2.setText("Clique nas setas para avançar ou retornar!");
-            JOptionPane.showMessageDialog(null, "Parabens! Você atribuiu um nome ao robô e ainda lhe informou sua idade!.");
-        } else if (!tipo1.equals("caractere") ||!tipo2.equals("inteiro")){
+            JOptionPane.showMessageDialog(null, "Parabens! Você atribuiu o nome "+nome+" e ainda lhe informou a idade de "+idade+"!.");
+        } else if (!tipoNome.equals("caractere") ||!tipoIdade.equals("inteiro")){
             statusQuestao.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_erro.png")));
             JOptionPane.showMessageDialog(null, "Hum... Tem alguma coisa errada. (Dica: Verifique os tipos das variaveis...)");
         }

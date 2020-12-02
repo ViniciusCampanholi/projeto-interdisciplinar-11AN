@@ -87,7 +87,6 @@ public class Condicional4 extends javax.swing.JFrame {
         jLabel1.setBounds(230, 30, 340, 40);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel3.setForeground(java.awt.SystemColor.textHighlight);
         jLabel3.setText("var");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(50, 180, 30, 40);
@@ -98,7 +97,6 @@ public class Condicional4 extends javax.swing.JFrame {
         jLabel4.setBounds(130, 150, 140, 40);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel5.setForeground(java.awt.SystemColor.textHighlight);
         jLabel5.setText("algoritmo");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(50, 150, 70, 40);
@@ -109,7 +107,6 @@ public class Condicional4 extends javax.swing.JFrame {
         jLabel6.setBounds(70, 210, 140, 40);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel7.setForeground(java.awt.SystemColor.textHighlight);
         jLabel7.setText("inicio");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(50, 240, 200, 40);
@@ -125,7 +122,6 @@ public class Condicional4 extends javax.swing.JFrame {
         jLabel9.setBounds(70, 360, 310, 40);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel10.setForeground(java.awt.SystemColor.textHighlight);
         jLabel10.setText("fimalgoritmo");
         getContentPane().add(jLabel10);
         jLabel10.setBounds(50, 400, 310, 40);

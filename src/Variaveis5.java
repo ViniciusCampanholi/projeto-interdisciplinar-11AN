@@ -11,12 +11,12 @@ import javax.swing.ImageIcon;
  *
  * @author vinic
  */
-public class Variaveis1 extends javax.swing.JFrame {
+public class Variaveis5 extends javax.swing.JFrame {
 
     /**
      * Creates new form variaveis
      */
-    public Variaveis1() {
+    public Variaveis5() {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("img/icone.png")).getImage());
     }
@@ -30,32 +30,14 @@ public class Variaveis1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(800, 630));
         setMinimumSize(new java.awt.Dimension(800, 630));
-        setPreferredSize(new java.awt.Dimension(800, 630));
         setResizable(false);
         getContentPane().setLayout(null);
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
-        jButton1.setToolTipText("Clique para ir para a próxima tela");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setFocusCycleRoot(true);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(580, 400, 50, 70);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         jButton2.setText("Menu");
@@ -72,7 +54,7 @@ public class Variaveis1 extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(720, 560, 70, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/variavelTexto1.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/variavelTexto4.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(50, 120, 590, 330);
 
@@ -91,18 +73,6 @@ public class Variaveis1 extends javax.swing.JFrame {
         Mn.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        jButton1.setOpaque(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setBorderPainted(false);
-
-        Variaveis2 var2 = new Variaveis2();
-        var2.setVisible(true);
-        dispose();
-
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,7 +112,6 @@ public class Variaveis1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

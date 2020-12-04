@@ -114,6 +114,7 @@ public class Condicional6 extends javax.swing.JFrame {
         jTextArea1.setText("Muito bem, vamos treinar! Apos responder, clica no botão enviar.\n\n1) Escolha o comando que inicia uma estrutura condicional, sendo que apenas uma está correta:");
         jTextArea1.setWrapStyleWord(true);
         jTextArea1.setBorder(null);
+        jTextArea1.setName(""); // NOI18N
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1);

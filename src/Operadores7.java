@@ -1,5 +1,7 @@
 
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -11,12 +13,12 @@ import javax.swing.ImageIcon;
  *
  * @author vinic
  */
-public class Operadores3 extends javax.swing.JFrame {
+public class Operadores7 extends javax.swing.JFrame {
 
     /**
      * Creates new form operadores
      */
-    public Operadores3() {
+    public Operadores7() {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("img/icone.png")).getImage());
     }
@@ -31,9 +33,12 @@ public class Operadores3 extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        statusQuestao1 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        camporesposta = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,22 +62,10 @@ public class Operadores3 extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(720, 560, 70, 30);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnAnterior.png"))); // NOI18N
-        jButton1.setToolTipText("Clique para ir para a próxima tela");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setFocusCycleRoot(true);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(520, 420, 60, 70);
+        statusQuestao1.setToolTipText("");
+        getContentPane().add(statusQuestao1);
+        statusQuestao1.setBounds(360, 240, 30, 30);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
         jButton3.setToolTipText("Clique para ir para a próxima tela");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
@@ -85,14 +78,48 @@ public class Operadores3 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(580, 420, 50, 70);
+        jButton3.setBounds(710, 450, 50, 70);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/operador-tx3.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 120, 580, 310);
+        camporesposta.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        camporesposta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                camporespostaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(camporesposta);
+        camporesposta.setBounds(50, 270, 210, 40);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
-        jLabel1.setText("fundo");
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icone_executar.png"))); // NOI18N
+        jButton4.setText("Enviar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4);
+        jButton4.setBounds(60, 450, 120, 41);
+
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jTextArea2.setLineWrap(true);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("1) Analisando o código abaixo:\n \n   A) num = 10 + num\n   B)  escreva(\"A = \", a)\n   C) fimalgoritmo   \n   D) inicio\n   E) inteiro num = 5\n \n Escreva a sequencia correta do codigo?\n");
+        jTextArea2.setWrapStyleWord(true);
+        jTextArea2.setBorder(null);
+        jTextArea2.setName(""); // NOI18N
+        jScrollPane2.setViewportView(jTextArea2);
+
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(40, 60, 720, 220);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto2.png"))); // NOI18N
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setMaximumSize(new java.awt.Dimension(832, 630));
         jLabel1.setMinimumSize(new java.awt.Dimension(832, 630));
         jLabel1.setPreferredSize(new java.awt.Dimension(832, 630));
@@ -110,27 +137,45 @@ public class Operadores3 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        jButton1.setOpaque(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setBorderPainted(false);
-
-        Operadores2 before = new Operadores2();
-        before.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        jButton1.setOpaque(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setBorderPainted(false);
+        jButton3.setOpaque(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.setBorderPainted(false);
 
-        Operadores4 next = new Operadores4();
+        Operadores7 next = new Operadores7();
         next.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        String correta;
+        correta = camporesposta.getText();
+                
+        if(correta.equals("DEABC")){
+            statusQuestao1.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_acerto.png")));
+
+        }else {
+            statusQuestao1.setIcon((Icon) new ImageIcon(getClass().getResource("img/icon_erro.png")));
+        }
+         if(correta.equals("DEABC")){
+            //jButton3.setIcon((Icon) new ImageIcon(getClass().getResource("img/btnProximo.png")));
+            JOptionPane.showMessageDialog(null, "Parabens! Com isso podemos implementar o ensino de efetuar operações matemáticas básicas no Robô.\n Clique no botão Menu");
+        }else{
+            JOptionPane.showMessageDialog(null, "Qestão incorreta tente novamente");
+            Operadores7 next = new Operadores7();
+            next.setVisible(true);
+            dispose();
+        }
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void camporespostaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_camporespostaActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_camporespostaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,10 +214,13 @@ public class Operadores3 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField camporesposta;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JLabel statusQuestao1;
     // End of variables declaration//GEN-END:variables
 }

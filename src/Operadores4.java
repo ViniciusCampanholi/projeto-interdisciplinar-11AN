@@ -11,12 +11,12 @@ import javax.swing.ImageIcon;
  *
  * @author vinic
  */
-public class Operadores3 extends javax.swing.JFrame {
+public class Operadores4 extends javax.swing.JFrame {
 
     /**
      * Creates new form operadores
      */
-    public Operadores3() {
+    public Operadores4() {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("img/icone.png")).getImage());
     }
@@ -33,7 +33,8 @@ public class Operadores3 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -87,9 +88,14 @@ public class Operadores3 extends javax.swing.JFrame {
         getContentPane().add(jButton3);
         jButton3.setBounds(580, 420, 50, 70);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/operador-tx3.png"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(50, 120, 580, 310);
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Agora que você aprendeu todo o conteúdo necessário para utilizar \nos operadores siga para próxima tela pra colocar a prova o seu\nconhecimento adquirido.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(50, 130, 590, 250);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/telaTexto1.png"))); // NOI18N
         jLabel1.setText("fundo");
@@ -116,7 +122,7 @@ public class Operadores3 extends javax.swing.JFrame {
         jButton1.setContentAreaFilled(false);
         jButton1.setBorderPainted(false);
 
-        Operadores2 before = new Operadores2();
+        Operadores3 before = new Operadores3();
         before.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -127,7 +133,7 @@ public class Operadores3 extends javax.swing.JFrame {
         jButton1.setContentAreaFilled(false);
         jButton1.setBorderPainted(false);
 
-        Operadores4 next = new Operadores4();
+        Operadores5 next = new Operadores5();
         next.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -173,6 +179,7 @@ public class Operadores3 extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }

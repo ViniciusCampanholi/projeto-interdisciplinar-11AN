@@ -35,7 +35,6 @@ public class Condicional6 extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         statusQuestao1 = new javax.swing.JLabel();
         statusQuestao2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -78,21 +77,6 @@ public class Condicional6 extends javax.swing.JFrame {
         jLabel1.setText("Estrutura condicional composta");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(190, 30, 370, 40);
-
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnProximo.png"))); // NOI18N
-        jButton2.setToolTipText("Clique para ir para a próxima tela");
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusCycleRoot(true);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(710, 460, 50, 70);
 
         statusQuestao1.setToolTipText("");
         getContentPane().add(statusQuestao1);
@@ -259,13 +243,6 @@ public class Condicional6 extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        //Condicional8 cond8 = new Condicional8();
-        //cond8.setVisible(true);
-        //dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void correto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correto1ActionPerformed
         // TODO add your handling code here:
         if(correto1.isSelected()){
@@ -392,7 +369,6 @@ public class Condicional6 extends javax.swing.JFrame {
     private javax.swing.JLabel background;
     private javax.swing.JRadioButton correto1;
     private javax.swing.JRadioButton correto2;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
